@@ -1,0 +1,111 @@
+/*@keyframes example {
+  from {background-image:url(./../image/burger-2034433_1280.jpg);}
+  to {background-image: url(./../image/image.jpg);}
+}
+
+/* The element to apply the animation to */
+/*div {
+  width: 100px;
+  height: 100px;
+  background-color:cyan;
+  animation-name: example;
+  animation-duration: 10s;
+  
+}*/
+
+
+/*  PRELOADER   */
+.font-cursive{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.preloader-wrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.soratra{
+  font-family: Garamond, serif;
+  margin-right: 40px;
+}
+
+.mot{
+  margin-right:200px;
+  text-align:left;
+}
+
+.coin{
+  font-family: 'Times New Roman', serif; ;
+}
+
+
+/*div.next{
+    position: absolute;
+    left: 300px;
+    width: 500px;
+    height: 500px;
+    background-image: url(./../image/restaurant-691397_1920.jpg);
+
+}*/
+/*body{
+  background-image: url(./../image/burger-2034433_1280.jpg);
+}*/
+/*.id_div{
+     display: grid;
+     grid-template-columns: 0px 15px auto 50%;
+}*/
+ /*animation av amin place samy afa*/
+.maric{
+  width: 100vw;
+  height: 100vh;
+}
+
+#id_div1 {
+  width: 100px;
+  height: 50px;
+  background-image: url(./../image/pexels-rajesh-tp-1624487.jpg);
+  font-weight: bold;
+  position: relative;
+  animation: mymove1 5s ;
+}
+
+#id_div2{
+  width: 200px;
+  height: 80px;
+  background-image: url(./../image/image.jpg);
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+  animation: mymove2 10s ;
+}
+
+#id_div1 {animation-timing-function: linear;}
+#id_div2 {animation-timing-function: ease;}
+/*#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}*/
+.pad{
+  padding: 50px;
+}
+
+@keyframes mymove1 {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+@keyframes mymove2 {
+    from{right: 20px;}
+    to{left: 300px;}  
+}

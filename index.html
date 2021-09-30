@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Skyline</title>
+
+    <!-- CSS Core -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+        html{
+            background-color: black !important;
+            scroll-behavior: smooth;
+        }
+        #myCarousel {
+            background-color: black;
+        }
+        a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: none;
+            color :white;
+        }
+        .carousel-item {
+            height: 100vh;
+            width: 300px;
+        }
+        .carousel-caption {
+            padding-bottom: 220px;
+        }
+        .carousel-caption h5{
+            font-size: 60px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+            font-weight: 900;
+        }
+
+        .second {
+            background: black;
+            width: 100%;
+            height: 100vh;
+            padding-top: 50px;
+            padding-right :60px;
+        }
+        .second .row{
+            overflow-x: auto;
+        }
+        .second .row::-webkit-scrollbar{
+            width: 0;
+        }
+        .zoom {
+            margin-left: 10px;
+            animation: 1s ease-in ;
+        }
+        .zoom:hover {
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+          }
+          .line{
+            border: none;
+            border-top: 3px double white;
+            color: white;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+          }
+          
+    </style>
+
+    <!-- CSS Core -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="assets/css/style.css">          
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader-wrapper">
+        <div class="preloader">
+            <p class="display-1 text-white text-uppercase">Skyline</p>
+            <hr class="line animate__animated animate animate__swing">
+        </div>
+    </div>
+
+    <!-- End Preloader -->
+
+
+    <!-- Slider -->
+    <div id="mySlider" class="carousel slide z-depth-1-half" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/image/header_bg_1.jpg" alt="First slide">
+            <div class="p-fixed carousel-caption d-none d-md-block">
+                <p class="text-uppercase">T    H    E</p>
+                <h5 class="display-2">Skyline</h5>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/image/header_bg_2.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="text-uppercase">F  U  T  U  R  E</p>
+                <h5 class="display-2">is Now</h5>
+              </div>
+          </div>
+        </div>
+        
+    </div>
+  
+    <!-- End Slider -->
+
+
+
+    <!-- Section -->
+    <div class="second container-fluid">
+        <!-- partie gauche -->
+        <div class="row">
+            <div class="col-6 pad" id="first">
+                <!-- ambony -->
+                <div class="left-section" >
+                    <h1 data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="20000" class='text-white'>Movie-inspired</h1>
+                    <h1 data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="20000"class='text-white'>Typography</h1>
+                </div>
+
+                <div class=" right-section">
+                    <p data-aos="fade-up-right" data-aos-easing="ease-out-cubic" data-aos-duration="20000" class="h6 pt-4 text-white text-right mot">Masterly animated captions allure your viewer
+                        <br>with modern motion design and introduce a
+                        <br>true filmic atmosphere in your edits. 
+                    </p>
+                </div>
+
+                <img data-aos="fade-up-left" data-aos-easing="ease-out-cubic" data-aos-duration="20000" class="img pt-5" width="400" height="auto" src="assets/image/video_thumbnail.jpg"  alt="Thumbnail">
+            </div>
+
+        <div class="col-6 pad">
+                <!-- partie droite -->
+                <div class="d-flex">
+                    <p class="h6 text-white soratra">WATCH<br>
+                        <span class="h6 text-white soratra">TUTORIAL</span>
+                    </p>
+                    <p class="h6 text-white soratra">WATCH<br>
+                        <span class="h6 text-white soratra">TRAILER</span>
+                    </p>
+                    </div>
+
+                <div  data-aos="fade-up-left" data-aos-easing="ease-out-cubic" data-aos-duration="10" class="d-flex ">
+                    <img id="img1" src="assets/image/slide_1.jpg" class="ml-4" id="1" height="500px"   alt="">
+                    <img id="img2" src="assets/image/slide_2.jpg" class="ml-4" id="2" height="500px"   alt="">
+                    <img id="img3" src="assets/image/slide_3.jpg" class="ml-4" id="3" height="500px"   alt="">
+                </div>
+            </div>
+        </div>
+        <div class="min row">
+            <a href="#first"  class="btn btn-muted col-1 text-uppercase"> ___Prev </a>
+            <a href="#3" class="btn btn-muted offset-10 text-uppercase" >  Next___ </a>
+        </div>
+    </div>
+
+    <!-- End Section -->
+    
+
+
+    <!-- Js Core -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> 
+    <!-- <script src="assets/js/jquery-3.6.0.slim.min.js"></script> -->
+</body>
+</html>
